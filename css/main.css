@@ -1,5 +1,5 @@
 .navbar {
-    background-color: cornflowerblue;
+    background-color: rgb(169, 196, 247);
     border-bottom: 4px solid black;
 }
 
@@ -14,10 +14,18 @@
  }
 
  .customizer {
-     background-color: bisque;
+     background-image: linear-gradient(rgb(238, 223, 206), white);
      margin: 0;
      border: 2px dashed black;
      border-top: 0;
+ }
+
+ .customizer-tally {
+     
+ }
+
+ .custom-cards {
+     display: none;
  }
 
  @media only screen and (max-width: 767px) {
