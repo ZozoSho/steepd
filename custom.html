@@ -9,21 +9,104 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
 
-    <title>Steepd Home</title>
-    
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <title>Create a Custom Tea Blend</title>
+
 </head>
 <body>
-    
+    <nav class="w-100 navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#steepdNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="steepdNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="catalog.html" class="nav-link"><i class="fas fa-mug-hot"></i>Shop</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    </ul>
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </span>
+                </div>
+        </div>
+    </nav>
+
+    <div class="container main-row">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 d-block carousel-div">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/tea-party-1001654_1920.jpg" alt="Classic Tea Party Ideas">
+                            <div class="carousel-caption">
+                                <h3>
+                                    Classic Tea Party Ideas
+                                </h3>
+                                <p class="d-none d-sm-block">Our guide to holding the perfect mid-century themed tea party - sure to impress any guest!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/tea-3057632_1920.jpg" alt="New Arrival: Frosted Jade Set">
+                            <div class="carousel-caption">
+                                <h3>
+                                    New Arrival: Frosted Jade Set
+                                </h3>
+                                <p class="d-none d-sm-block">The charm of Hagi Ware lies in the rough texture of the clay and the pockmarked surfaces laced with cracks in the glaze. Hagi Ware is liquid-permeable. This results in another interesting characteristic, that is, that its color and tone change with use, especially if used to drink tea. Hagi Ware also effectually expresses a certain simplicity due to the original standards of its style, the tint of the clay, and the glazing technique. Thus, Hage Ware has been widely appreciated by experts of the tea ceremony.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/cup-3265835_1920.jpg" alt="New Arrival: British Royal Series">
+                            <div class="carousel-caption">
+                                <h3>
+                                    New Arrival: British Royal Series
+                                </h3>
+                                <p class="d-none d-sm-block">This classic design will complement traditional and contemporary tastes, which has made it a popular gift for weddings, holidays and other special occasions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        <a href="#homeCarousel" role="button" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>    
+                        <a href="#homeCarousel" role="button" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>    
+                        
+                </div>
+            </div>
+            <div class="col text-center customizer">
+                <h1>
+                    Create a Custom Tea Blend
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1></h1>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>

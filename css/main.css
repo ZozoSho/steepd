@@ -1,0 +1,30 @@
+.navbar {
+    background-color: cornflowerblue;
+    border-bottom: 4px solid black;
+}
+
+.main-row {
+  max-width: 100%;
+  padding: 0 0 0 1rem;
+  margin: 0 -1rem;
+ }
+
+ .carousel-div {
+     padding-right: 0;
+ }
+
+ .customizer {
+     background-color: bisque;
+     margin: 0;
+     border: 2px dashed black;
+     border-top: 0;
+ }
+
+ @media only screen and (max-width: 767px) {
+    .carousel-div {
+        padding: 0 0 0 1rem;
+    }
+    .customizer {
+        
+    }
+  }
