@@ -1,4 +1,51 @@
-.main-row {
-    max-width: 100%;
-    padding: 0;
+@import url(~mdb-ui-kit/css/mdb.min.css);
+
+.navbar {
+    background-color: rgb(169, 196, 247);
+    border-bottom: 4px solid black;
 }
+
+.main-row {
+  max-width: 100%;
+  padding: 0 0 0 1rem;
+  margin: 0 -1rem;
+ }
+
+ .carousel-div {
+     padding-right: 0;
+ }
+
+ .customizer {
+     background-image: linear-gradient(rgb(238, 223, 206), white);
+     margin: 0;
+     border: 2px dashed black;
+     border-top: 0;
+     padding: 3rem;
+ }
+
+.btn-check {
+    display: none;
+}
+
+.card {
+    width: 12rem;
+}
+
+@media only screen and (max-width: 980px) {
+    .card {
+        width: 10rem;
+    }
+  }
+
+
+ @media only screen and (max-width: 767px) {
+     h4 {
+         font-size: 1rem;
+     }
+    .card {
+        width: 8rem;
+    }
+    .carousel-div {
+        padding: 0 0 0 1rem;
+    }
+  }

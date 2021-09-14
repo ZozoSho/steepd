@@ -18,19 +18,23 @@
 <body>
     <nav class="w-100 navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#steepdNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
                 <div class="collapse navbar-collapse" id="steepdNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a href="catalog.html" class="nav-link"><i class="fas fa-mug-hot"></i>Shop</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa fa-info fa-lg"></i> About</a></li>
+                        <li class="nav-item active"><a href="catalog.html" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     </ul>
                     <span class="navbar-text ml-auto">
-                        <a role="button" data-toggle="modal" data-target="#loginModal">
-                            <i class="fa fa-sign-in"></i> Login
-                        </a>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-secondary" type="button">Search</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                            <i class="fa-solid fa-cart-shopping mt-2"></i>
+                        </div>
                     </span>
                 </div>
         </div>
