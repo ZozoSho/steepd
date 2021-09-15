@@ -5,6 +5,31 @@
     border-bottom: 4px solid black;
 }
 
+#navlogo {
+    display: block;
+    text-indent: -9999px;
+    height: 128px;
+    width: 255px;
+    margin-bottom: -3rem;
+    background-image: url(../img/logo.svg);
+    background-size: 255px 128px;
+}
+.search {
+    background-color: black;
+    color: white;
+    transition: 2000ms;
+    border-radius: 10px;
+}
+
+.search:hover {
+    color: slategray;
+}
+
+.searchfield {
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
 .main-row {
   max-width: 100%;
   padding: 0 0 0 1rem;
@@ -21,7 +46,16 @@
      border: 2px dashed black;
      border-top: 0;
      padding: 3rem;
+     height: 60%;
  }
+
+ .join {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 3rem;
+    height: 40%;
+}
 
 .btn-check {
     display: none;

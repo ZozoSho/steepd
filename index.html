@@ -12,28 +12,41 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
 
-    <title>Steepd Home</title>
+    <title>Steep'd Home</title>
 
 </head>
 <body>
     <nav class="w-100 navbar navbar-expand-sm navbar-light sticky-top">
-        <div class="container">
+        <div class="container p-0">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#steepdNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
                 <div class="collapse navbar-collapse" id="steepdNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a href="catalog.html" class="nav-link">Shop</a></li>
+                    <ul class="navbar-nav ml-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Shop
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Classic Tea Blends</a>
+                              <a class="dropdown-item" href="#">Tea Sets</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="custom.html">Customize Your Tea Blend</a>
+                            </div>
+                          </li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     </ul>
-                    <span class="navbar-text ml-auto">
+                        
+                        <a href="index.html" class="mx-auto" id="navlogo"></a>
+                    
+                    
+                    <span class="navbar-text mr-0">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                              <button class="btn btn-outline-secondary" type="button">Search</button>
+                              <button class="btn search" type="button">Search</button>
                             </div>
-                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                            <i class="fa-solid fa-cart-shopping mt-2"></i>
+                            <input type="text" class="form-control searchfield" placeholder="" aria-label="" aria-describedby="basic-addon1">
                         </div>
                     </span>
                 </div>
@@ -92,10 +105,17 @@
                         
                 </div>
             </div>
-            <div class="col text-center customizer">
-                <h1>
+            <div class="col p-0">
+                <div class="row text-center customizer">
+                    <h1>
                     Create a Custom Tea Blend
-                </h1>
+                    </h1>
+                </div>
+                <div class="row text-center join">
+                    <h1>
+                    Join our community!
+                    </h1>
+                </div>
             </div>
         </div>
 
