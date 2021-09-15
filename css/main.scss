@@ -1,8 +1,28 @@
-@import url(~mdb-ui-kit/css/mdb.min.css);
+
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
 
 .navbar {
     background-color: rgb(169, 196, 247);
     border-bottom: 4px solid black;
+}
+
+.navbar-nav {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.nav-item { 
+    font-size: 20px;
+    transition: 1000ms;
+    margin-right: 1rem;
+}
+
+.nav-item:hover {
+    color: black;
 }
 
 #navlogo {
@@ -41,28 +61,50 @@
  }
 
  .customizer {
-     background-image: linear-gradient(rgb(238, 223, 206), white);
+     background-color: #FFEFAE;
      margin: 0;
      border: 2px dashed black;
      border-top: 0;
      padding: 3rem;
-     height: 60%;
+     height: 55%;
  }
 
  .join {
-    background-color: black;
+    background-color: #212172;
     color: white;
     margin: 0;
     padding: 3rem;
     height: 40%;
 }
 
+.social {
+    background-color: black;
+    height: 5%;
+    margin: 0;
+    padding: .4rem;
+}
+ 
+.btn-social-icon {
+    margin: auto 1rem;
+}
 .btn-check {
     display: none;
 }
 
 .card {
     width: 12rem;
+}
+
+.reviews-row {
+    border-top: 4px solid black;
+    margin-left: 0rem;
+    padding: 3rem;
+    background-color: linear-gradient(rgb(238, 223, 206), gray)
+}
+
+iframe {
+    border: none;
+    width: 100%;
 }
 
 @media only screen and (max-width: 980px) {
