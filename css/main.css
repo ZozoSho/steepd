@@ -2,6 +2,9 @@ h1 {
   font-family: 'Barlow', sans-serif;
   font-weight: 700; }
 
+button:focus {
+  outline: none; }
+
 .navbar {
   background-color: #a9c4f7;
   border-bottom: 4px solid black; }
@@ -87,6 +90,22 @@ h1 {
 iframe {
   border: none;
   width: 100%; }
+
+.baselist, .spicelist, .fruitlist, .florallist {
+  list-style-type: none; }
+
+.cardbtn {
+  padding: .25rem;
+  border: none;
+  width: 100%; }
+
+.add {
+  background-color: #ca7300;
+  color: white; }
+
+.remove {
+  background-color: #2f373a;
+  color: white; }
 
 @media only screen and (max-width: 980px) {
   .card {

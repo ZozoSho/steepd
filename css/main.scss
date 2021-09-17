@@ -5,6 +5,10 @@ h1 {
     font-weight: 700;
 }
 
+button:focus {
+    outline: none;
+}
+
 .navbar {
     background-color: rgb(169, 196, 247);
     border-bottom: 4px solid black;
@@ -105,6 +109,27 @@ h1 {
 iframe {
     border: none;
     width: 100%;
+}
+
+//custom
+
+.baselist, .spicelist, .fruitlist, .florallist {
+    list-style-type: none;
+}
+
+.cardbtn {
+    padding: .25rem;
+    border: none;
+    width: 100%;
+}
+.add{
+    background-color: rgb(202, 115, 0);
+    color: white;
+}
+
+.remove {
+    background-color: rgb(47, 55, 58);
+    color: white;
 }
 
 @media only screen and (max-width: 980px) {
