@@ -24,11 +24,14 @@ button:focus {
 #navlogo {
   display: block;
   text-indent: -9999px;
-  height: 128px;
-  width: 255px;
-  margin-bottom: -3rem;
+  height: 160px;
+  width: 318.75px;
+  margin-bottom: -4rem;
   background-image: url(../img/logo.svg);
-  background-size: 255px 128px; }
+  background-size: 318.75px 160px; }
+
+#navlogomobile {
+  display: none; }
 
 .search {
   background-color: black;
@@ -78,9 +81,6 @@ button:focus {
 .btn-check {
   display: none; }
 
-.card {
-  width: 12rem; }
-
 .reviews-row {
   border-top: 4px solid black;
   margin-left: 0rem;
@@ -93,6 +93,12 @@ iframe {
 
 .baselist, .spicelist, .fruitlist, .florallist {
   list-style-type: none; }
+
+.card {
+  margin: 1rem 2rem; }
+
+.card-img-top {
+  max-width: 12rem; }
 
 .cardbtn {
   padding: .25rem;
@@ -107,14 +113,49 @@ iframe {
   background-color: #2f373a;
   color: white; }
 
+@media only screen and (max-width: 1130px) {
+  h1 {
+    font-size: 2rem; } }
+
 @media only screen and (max-width: 980px) {
+  #navlogo {
+    display: block;
+    text-indent: -9999px;
+    height: 128px;
+    width: 255px;
+    margin-bottom: -3rem;
+    background-image: url(../img/logo.svg);
+    background-size: 255px 128px; }
   .card {
-    width: 10rem; } }
+    margin: 1rem 1rem; } }
 
 @media only screen and (max-width: 767px) {
   h4 {
     font-size: 1rem; }
+  #navlogo {
+    display: block;
+    text-indent: -9999px;
+    height: 89.6px;
+    width: 178.5px;
+    margin-bottom: -3rem;
+    background-image: url(../img/logo.svg);
+    background-size: 178.5px 89.6px; }
   .card {
-    width: 8rem; }
+    margin: .5rem; }
   .carousel-div {
     padding: 0 0 0 1rem; } }
+
+@media only screen and (max-width: 560px) {
+  #navlogo {
+    display: none; }
+  #navlogomobile {
+    display: block;
+    height: 89.6px;
+    width: 178.5px;
+    background-image: url(../img/logo.svg);
+    background-size: 178.5px 89.6px;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    z-index: 1000;
+    margin-top: .5rem; } }
