@@ -46,6 +46,9 @@ button:focus {
   border: solid black 2px;
   border-radius: 10px; }
 
+.searchfield:focus {
+  outline: none; }
+
 .main-row {
   max-width: 100%;
   padding: 0 0 0 1rem;
@@ -60,7 +63,7 @@ button:focus {
   border: 2px dashed black;
   border-top: 0;
   padding: 3rem;
-  height: 55%; }
+  height: 60%; }
 
 .join {
   background-color: #212172;
@@ -71,15 +74,16 @@ button:focus {
 
 .social {
   background-color: black;
-  height: 5%;
+  height: 40%;
+  width: 65px;
   margin: 0;
-  padding: .4rem; }
+  padding: .5rem 0;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .btn-social-icon {
-  margin: auto 1rem; }
-
-.btn-check {
-  display: none; }
+  margin: .5rem 1rem; }
 
 .reviews-row {
   border-top: 4px solid black;
@@ -115,47 +119,54 @@ iframe {
 
 @media only screen and (max-width: 1130px) {
   h1 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .btn-social-icon {
+    margin: .25rem; } }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 991px) {
   #navlogo {
     display: block;
     text-indent: -9999px;
-    height: 128px;
-    width: 255px;
+    height: 108.8px;
+    width: 216.75px;
     margin-bottom: -3rem;
     background-image: url(../img/logo.svg);
-    background-size: 255px 128px; }
+    background-size: 216.75px 108.8px; }
   .card {
-    margin: 1rem 1rem; } }
+    margin: 1rem 1rem; }
+  .join {
+    height: 300px; }
+  .social {
+    padding: 0 1rem;
+    width: 100%;
+    height: 65px;
+    top: 0; }
+  .btn-social-icon {
+    margin: 1rem .5rem; } }
 
 @media only screen and (max-width: 767px) {
   h4 {
     font-size: 1rem; }
   #navlogo {
+    display: none; }
+  #navlogomobile {
     display: block;
-    text-indent: -9999px;
-    height: 89.6px;
-    width: 178.5px;
-    margin-bottom: -3rem;
+    height: 102.4px;
+    width: 204px;
     background-image: url(../img/logo.svg);
-    background-size: 178.5px 89.6px; }
+    background-size: 204px 102.4px;
+    position: fixed;
+    top: 0;
+    left: 35%;
+    z-index: 1000;
+    margin-top: .5rem; }
   .card {
     margin: .5rem; }
   .carousel-div {
     padding: 0 0 0 1rem; } }
 
-@media only screen and (max-width: 560px) {
-  #navlogo {
-    display: none; }
+@media only screen and (max-width: 575px) {
   #navlogomobile {
-    display: block;
     height: 89.6px;
     width: 178.5px;
-    background-image: url(../img/logo.svg);
-    background-size: 178.5px 89.6px;
-    position: fixed;
-    top: 0;
-    left: 30%;
-    z-index: 1000;
-    margin-top: .5rem; } }
+    background-size: 178.5px 89.6px; } }
