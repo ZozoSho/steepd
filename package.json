@@ -10,7 +10,7 @@
     "scss": "node-sass -o css/ css/",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin catalog.html -d dist --htmlmin -o dist/catalog.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin custom.html -d dist --htmlmin -o dist/custom.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin custom.html -d dist --htmlmin -o dist/custom.html && usemin review1.html -d dist --htmlmin -o dist/review1.html  && usemin review2.html -d dist --htmlmin -o dist/review2.html  && usemin review3.html -d dist --htmlmin -o dist/review3.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",

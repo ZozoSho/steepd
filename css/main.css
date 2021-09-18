@@ -1,9 +1,19 @@
 h1 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Carter One', sans-serif;
   font-weight: 700; }
+
+h2 {
+  font-family: 'Carter One', sans-serif; }
 
 button:focus {
   outline: none; }
+
+a {
+  color: inherit; }
+
+a:hover {
+  color: inherit;
+  text-decoration: none; }
 
 .navbar {
   background-color: #a9c4f7;
@@ -62,14 +72,22 @@ button:focus {
   margin: 0;
   border: 2px dashed black;
   border-top: 0;
-  padding: 3rem;
-  height: 60%; }
+  padding: 1.5rem;
+  height: 60%;
+  transition: 700ms; }
+
+.customizer:hover {
+  background-color: orange; }
+
+#custombannerimg {
+  border: solid black;
+  border-radius: 3px; }
 
 .join {
   background-color: #212172;
   color: white;
   margin: 0;
-  padding: 3rem;
+  padding: 1rem;
   height: 40%; }
 
 .social {
@@ -92,8 +110,20 @@ button:focus {
   background-color: linear-gradient(#eedfce, gray); }
 
 iframe {
+  height: 500px;
   border: none;
   width: 100%; }
+
+.customizer-tally {
+  background-color: #FFEFAE;
+  margin: 0;
+  border: 2px dashed black;
+  border-top: 0;
+  padding: 1.5rem;
+  height: 60%;
+  position: fixed;
+  max-width: 500px;
+  right: 0; }
 
 .baselist, .spicelist, .fruitlist, .florallist {
   list-style-type: none; }
@@ -117,11 +147,23 @@ iframe {
   background-color: #2f373a;
   color: white; }
 
+@media only screen and (max-width: 1429px) {
+  .customtitle {
+    font-size: 1.75rem; } }
+
+@media only screen and (max-width: 1274px) {
+  .customtitle {
+    font-size: 1.35rem; } }
+
 @media only screen and (max-width: 1130px) {
-  h1 {
-    font-size: 2rem; }
+  .customtitle {
+    font-size: 1.3rem; }
   .btn-social-icon {
-    margin: .25rem; } }
+    margin: .25rem; }
+  .card-img-top {
+    width: 10rem; }
+  h4 {
+    font-size: 1.3rem; } }
 
 @media only screen and (max-width: 991px) {
   #navlogo {
@@ -132,17 +174,26 @@ iframe {
     margin-bottom: -3rem;
     background-image: url(../img/logo.svg);
     background-size: 216.75px 108.8px; }
-  .card {
-    margin: 1rem 1rem; }
+  .customizer-tally {
+    position: relative;
+    max-width: none; }
+  .customizer {
+    margin-left: 1rem;
+    height: 600px; }
+  .customtitle {
+    font-size: 2rem;
+    margin-top: 3rem; }
   .join {
-    height: 300px; }
+    height: 100px; }
   .social {
-    padding: 0 1rem;
+    padding: 0 .8rem;
     width: 100%;
     height: 65px;
     top: 0; }
   .btn-social-icon {
-    margin: 1rem .5rem; } }
+    margin: 1rem .5rem; }
+  .card {
+    margin: 1rem 1rem; } }
 
 @media only screen and (max-width: 767px) {
   h4 {
@@ -157,7 +208,7 @@ iframe {
     background-size: 204px 102.4px;
     position: fixed;
     top: 0;
-    left: 35%;
+    left: 37%;
     z-index: 1000;
     margin-top: .5rem; }
   .card {
@@ -169,4 +220,5 @@ iframe {
   #navlogomobile {
     height: 89.6px;
     width: 178.5px;
-    background-size: 178.5px 89.6px; } }
+    background-size: 178.5px 89.6px;
+    left: 35%; } }

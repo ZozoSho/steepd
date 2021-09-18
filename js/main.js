@@ -10,7 +10,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -26,7 +26,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -42,7 +42,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -58,7 +58,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -74,7 +74,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -90,7 +90,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -106,7 +106,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -122,7 +122,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -138,7 +138,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -154,7 +154,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -170,7 +170,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -186,7 +186,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -202,7 +202,23 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
+        $(this).text(function(i, text){
+            return text === "Add" ? "Remove" : "Add";
+        })
+        
+        
+    });
+
+    $("#clovecard").click(function(){
+        $("#clovecard").toggleClass("remove add");
+        $(".clovetotal").toggle();
+        $("#cloveprice").toggleClass("price");
+        let total = 0.00;
+        $(".price").each(function() {
+            total += +$(this).text()||0;
+        });
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -218,7 +234,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -234,7 +250,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -250,7 +266,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
@@ -266,7 +282,7 @@ $(function () {
         $(".price").each(function() {
             total += +$(this).text()||0;
         });
-        $("#totalprice").text("$" + total);
+        $("#totalprice").text("$" + total.toFixed(2));
         $(this).text(function(i, text){
             return text === "Add" ? "Remove" : "Add";
         })
