@@ -36,7 +36,7 @@
                               <a class="dropdown-item" href="#">Classic Tea Blends</a>
                               <a class="dropdown-item" href="#">Tea Sets</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="custom.html">Customize Your Tea Blend</a>
+                              <a class="dropdown-item customdropdown" href="custom.html">Customize Your Tea Blend</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -89,7 +89,7 @@
                                 <h3>
                                     New Arrival: Frosted Jade Set
                                 </h3>
-                                <p class="d-none d-sm-block">The charm of Hagi Ware lies in the rough texture of the clay and the pockmarked surfaces laced with cracks in the glaze. Hagi Ware is liquid-permeable. This results in another interesting characteristic, that is, that its color and tone change with use, especially if used to drink tea. Hagi Ware also effectually expresses a certain simplicity due to the original standards of its style, the tint of the clay, and the glazing technique. Thus, Hage Ware has been widely appreciated by experts of the tea ceremony.
+                                <p class="d-none d-sm-block">The charm of Hagi Ware lies in the rough texture of the clay and the pockmarked surfaces laced with cracks in the glaze. Hagi Ware is liquid-permeable. This results in another interesting characteristic, that is, that its color and tone change with use, especially if used to drink tea. 
                                 </p>
                             </div>
                         </div>
@@ -118,19 +118,26 @@
             <div class="col p-0">
                 <a href="custom.html">
                 <div class="row customizer">
-                    <h2 class="mx-auto text-center customtitle">
+                    <h2 class="mx-auto mb-1 text-center customtitle">
                     Create a Custom Tea Blend
                     </h2>
-                    <img src="img/tea-663095_640.jpg" alt="custom tea blend" class="img-fluid mx-auto" id="custombannerimg">
+                        <div class="mx-auto">
+                        <p class="text-center mb-1"><i>(Click here to start.)</i></p>    
+                        <img src="img/tea-663095_640.jpg" alt="custom tea blend" class="img-fluid mx-auto" id="custombannerimg">
+                        </div>    
                 </div>
                 </a>
                 <div class="row join">
-                    <div class="col pr-5">
-                    <h3>
+                    <div class="col-sm-6 col-lg-12 pr-5">
+                    <h3 class="join-text">
                     Join our community!
                     </h3>
-                    <p>Click here to recieve 20% off your first order.</p>                    
+                    <p>Sign up for 20% off your first order.</p>
                     </div>
+                    <div class="col col-sm-6">
+                    <button class="btn sign-up" data-toggle="modal" data-target="#signup">Sign Up</button>   
+                    </div>                 
+                </div>
                     <div class="text-center social">
                         <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
@@ -142,12 +149,33 @@
         </div>
     
         <div class="row reviews-row">
-            <h1 class="mx-auto">Reviews</h1>
+            <h1 class="mx-auto my-4">Reviews</h1>
                 <div class="col-12">
                     <iframe src="review1.html" title="reviews"></iframe>
                 </div>
         </div>
     </div>    
+
+    <div class="modal" id="signup" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign up for Steep'd</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>(sign up form pending)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn submit">Submit</button>
+              <button type="button" class="btn exit" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <footer>
 
     </footer>

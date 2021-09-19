@@ -26,10 +26,27 @@ a:hover {
 .nav-item {
   font-size: 20px;
   transition: 1000ms;
-  margin-right: 1rem; }
-
-.nav-item:hover {
+  margin-right: 1rem;
   color: black; }
+
+nav .navbar-nav li a {
+  color: black !important; }
+
+.dropdown-menu {
+  border: solid black 3px;
+  padding: 0;
+  width: 300px;
+  font-size: 1.25rem; }
+
+.dropdown-item {
+  margin: 0;
+  padding: 1rem; }
+
+.dropdown-divider {
+  margin: 0; }
+
+.customdropdown {
+  background-color: #FFEFAE; }
 
 #navlogo {
   display: block;
@@ -67,6 +84,11 @@ a:hover {
 .carousel-div {
   padding-right: 0; }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px; }
+
 .customizer {
   background-color: #FFEFAE;
   margin: 0;
@@ -74,11 +96,18 @@ a:hover {
   border-top: 0;
   padding: 1.5rem;
   height: 60%;
-  transition: 700ms; }
+  transition: 500ms; }
 
 .customizer:hover {
   background-color: orange; }
 
+/*  .clickhere {
+     position: absolute; 
+     color: white;
+     font-weight: 700;
+     font-size: 3rem;
+     top: 4rem;
+ } */
 #custombannerimg {
   border: solid black;
   border-radius: 3px; }
@@ -89,6 +118,50 @@ a:hover {
   margin: 0;
   padding: 1rem;
   height: 40%; }
+
+.join-text {
+  font-size: 2.5rem; }
+
+.sign-up {
+  color: #000;
+  font-weight: bold;
+  background-color: #FFEFAE;
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 235px;
+  transition: 500ms;
+  font-size: 1.25rem;
+  margin-left: 10%; }
+
+.sign-up:hover {
+  background-color: orange; }
+
+.submit {
+  color: #000;
+  font-weight: bold;
+  background-color: #FFEFAE;
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: 500ms; }
+
+.submit:hover {
+  background-color: orange; }
+
+.exit {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: 500ms; }
+
+.exit:hover {
+  background-color: black;
+  color: white; }
+
+.modal-header {
+  color: white;
+  background-color: black; }
 
 .social {
   background-color: black;
@@ -106,8 +179,7 @@ a:hover {
 .reviews-row {
   border-top: 4px solid black;
   margin-left: 0rem;
-  padding: 3rem;
-  background-color: linear-gradient(#eedfce, gray); }
+  padding: 3rem 0; }
 
 iframe {
   height: 500px;
@@ -154,8 +226,8 @@ iframe {
 @media only screen and (max-width: 1274px) {
   .customtitle {
     font-size: 1.35rem; }
-  .join > p {
-    font-size: small; } }
+  .join-text {
+    font-size: 1.5rem; } }
 
 @media only screen and (max-width: 1130px) {
   .customtitle {
@@ -165,7 +237,9 @@ iframe {
   .card-img-top {
     width: 10rem; }
   h4 {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .sign-up {
+    margin-left: 0; } }
 
 @media only screen and (max-width: 991px) {
   #navlogo {
@@ -186,9 +260,11 @@ iframe {
     height: 600px; }
   .customtitle {
     font-size: 2rem;
-    margin-top: 3rem; }
+    margin-top: 4rem; }
   .join {
-    height: 100px; }
+    height: 100px;
+    padding-left: 3rem;
+    align-items: center; }
   .social {
     padding: 0 .8rem;
     width: 100%;
@@ -218,7 +294,9 @@ iframe {
   .card {
     margin: .5rem; }
   .carousel-div {
-    padding: 0 0 0 1rem; } }
+    padding: 0 0 0 1rem; }
+  .join {
+    height: 200px; } }
 
 @media only screen and (max-width: 575px) {
   #navlogomobile {
