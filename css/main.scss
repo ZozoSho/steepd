@@ -192,6 +192,9 @@ iframe {
     .customtitle {
         font-size: 1.35rem;
     }
+    .join > p {
+        font-size: small;
+    }
 }
 
 @media only screen and (max-width: 1130px) {
@@ -226,6 +229,8 @@ iframe {
     .customizer-tally {
         position: relative;
         max-width: none;
+        margin-left: 1rem;
+        border-top: black dashed 2px;
     }
     
     .customizer {
